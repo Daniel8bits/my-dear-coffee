@@ -1,0 +1,13 @@
+
+@mixin setFlex($justifyContent: flex-start, $alignItems: flex-start, $direction: row) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin setDimension($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}

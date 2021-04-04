@@ -1,0 +1,49 @@
+
+.CP-topmenu {
+    background-color: $dark-brown;
+    height: 6.5em;
+    @include setFlex(flex-start, center);
+
+    
+
+    .CP-logo {
+        width: 8em;
+        margin: 0 0 0 2em;
+    }
+
+    .CP-options {
+        margin: 0 0 0 5em;
+        @include setDimension(auto, 100%);
+        @include setFlex(flex-start, center);
+        > div {
+            display: inline-block;
+        }
+
+        a {
+            margin: 0 0 0 3em;
+            text-decoration: none;
+            font-family: OleoScriptSwashCaps;
+            font-weight: bold;
+            color: white;
+            font-size: 1.2em;
+            text-shadow: 0 0 5px black;
+            transition: .5s;
+            div {
+                @include setFlex(center, center);
+                svg {
+                    margin-right: .25em;
+                }
+            }
+
+            &.active {
+                color: $orange;
+            }
+
+            &:hover:not(.active) {
+                color: $light-brown;
+            }
+        } 
+    }
+
+
+}

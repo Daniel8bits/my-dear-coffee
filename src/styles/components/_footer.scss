@@ -1,0 +1,34 @@
+
+footer {
+    .CP-footer {
+        @include setFlex(flex-start, center);
+        background-color: $dark-brown;
+        height: 15em;
+        border-top: 1em solid $orange;
+    
+        .CP-logo {
+            width: 20em;
+            margin: 0 2em;
+        }
+    
+        .CP-options {
+            @include setFlex(flex-start, center);
+            width: 10em;
+            height: 70%;
+            margin: 0 5em 0 auto;
+        }
+    }
+
+    .CP-credits {
+        @include setFlex(center, center);
+        background-color: #222;
+        width: 100%;
+        height: 7em;
+        font-family: OleoScript;
+        color: white;
+
+        span {
+            font-size: 1.3em;
+        }
+    }
+}

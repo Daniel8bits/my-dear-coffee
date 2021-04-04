@@ -1,0 +1,30 @@
+
+$domain: "http://localhost:3000";
+
+@font-face {
+    font-family: 'OleoScript';
+    src: url(#{$domain}/assets/fonts/OleoScript-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OleoScript';
+    src: url(#{$domain}/assets/fonts/OleoScript-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OleoScriptSwashCaps';
+    src: url(#{$domain}/assets/fonts/OleoScriptSwashCaps-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OleoScriptSwashCaps';
+    src: url(#{$domain}/assets/fonts/OleoScriptSwashCaps-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
