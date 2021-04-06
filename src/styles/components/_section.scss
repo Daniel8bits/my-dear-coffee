@@ -1,0 +1,50 @@
+
+.CP-section {
+
+    @include setFlex(flex-start, stretch);
+    flex-wrap: nowrap;
+    padding: 2em;
+
+    > div {
+        box-shadow: 0 0 5px black;
+    }
+
+    .CP-image {
+
+        width: 70%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .CP-description {
+
+        width: 100%;
+        background-color: $black-glass;
+        margin: 0 0 0 2em;
+        color: white;
+        text-shadow: 0 0 5px black;
+        text-align: center;
+        padding: 1em;
+
+        h2 {
+            font-family: OleoScriptSwashCaps;
+            font-size: 2em;
+            margin: 1em 0;
+        }
+
+        span {
+            font-family: OleoScript;
+            font-size: 1.2em;
+        }
+
+    }
+
+}
+
+section:nth-child(2) .CP-section {
+    border-top: .3em solid $reddish-brown;
+    border-bottom: .3em solid $reddish-brown;
+}

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-import TopMenu from './modules/components/menu/TopMenu'
+import Header from './modules/components/header/Header';
 import Footer from './modules/components/footer/Footer'
 
 import ViewManager from './modules/layouts/ViewManager'
@@ -13,21 +13,45 @@ import Drinks from './modules/pages/Drinks'
 
 import {BrowserRouter} from 'react-router-dom'
 
+import {useSelector, useDispatch} from 'react-redux'
+import {PageMenuActions} from './redux/PageMenu/PageMenu'
+
+import api from './utils/api'
+
 import './styles/main.scss'
 
+
 const App = () => {
+
+  const dispatch = useDispatch()
+  const page = useSelector(state => state.pageMenu.page)
+
+  useEffect(() => {
+    let pathname = document.location.pathname
+    if(pathname !== api.pages[page].pathname){
+      for(let i = 1; i < api.pages.length; i++){
+        if(pathname === api.pages[i].pathname){
+          dispatch(PageMenuActions.setPage(i))
+          break
+        }
+      }
+    }
+  });
+
   return (
     <BrowserRouter>
       <ScrolledViewContainer height='100vh'>
-        <TopMenu  />
-        <ViewManager  
-          items={[
-            {item: <Home  />,     id: ""        },
-            {item: <Kinds  />,    id: "kinds"   },
-            {item: <Benefits  />, id: "benefits"},
-            {item: <Drinks  />,   id: "drinks"  }
-          ]}
-        />
+        <Header page={page}  />
+        <main>
+          <ViewManager  
+            items={[
+              {item: <Home      page={api.pages[0].content}  />, id: api.pages[0].pathname},
+              {item: <Kinds     page={api.pages[0].content}  />, id: api.pages[1].pathname},
+              {item: <Benefits  page={api.pages[0].content}  />, id: api.pages[2].pathname},
+              {item: <Drinks    page={api.pages[0].content}  />, id: api.pages[3].pathname}
+            ]}
+          />
+        </main>
         <Footer  />
       </ScrolledViewContainer>
     </BrowserRouter>

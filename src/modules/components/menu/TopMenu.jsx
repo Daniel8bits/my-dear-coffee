@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import Logo from '../generals/Logo'
 import MenuItem, {MenuItemList} from './MenuItem'
@@ -14,23 +14,25 @@ const TopMenu = () => {
     return (
         <div className='CP-topmenu'>
             <Logo  />
-            <div className="CP-options">
-                {
-                    MenuItemList.map((value, index) => {
-                        return (
-                            <MenuItem 
-                                key={index} 
-                                icon={value.icon} 
-                                to={value.viewId}
-                                isActive={(page == index ? "active" : "")}
-                                onClick={() => dispatch(PageMenuActions.setPage(index))}
-                            >
-                                {value.content}
-                            </MenuItem>
-                        )
-                    })
-                }
-            </div>
+            <nav>
+                <div className="CP-options">
+                    {
+                        MenuItemList.map((value, index) => {
+                            return (
+                                <MenuItem 
+                                    key={index} 
+                                    icon={value.icon} 
+                                    to={value.viewId}
+                                    isActive={(page === index ? "active" : "")}
+                                    onClick={() => dispatch(PageMenuActions.setPage(index))}
+                                >
+                                    {value.content}
+                                </MenuItem>
+                            )
+                        })
+                    }
+                </div>
+            </nav>
         </div>
     );
 };

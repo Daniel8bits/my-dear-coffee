@@ -6,6 +6,8 @@ import MenuItem, {MenuItemList} from '../menu/MenuItem'
 import {useSelector, useDispatch} from 'react-redux'
 import {PageMenuActions} from '../../../redux/PageMenu/PageMenu'
 
+import api from '../../../utils/api'
+
 const Footer = () => {
 
     const dispatch = useDispatch()
@@ -23,7 +25,7 @@ const Footer = () => {
                                     key={index} 
                                     icon={value.icon} 
                                     to={value.viewId}
-                                    isActive={(page == index ? "active" : "")}
+                                    isActive={(page === index ? "active" : "")}
                                     onClick={() => dispatch(PageMenuActions.setPage(index))}
                                 >
                                     {value.content}
@@ -34,7 +36,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='CP-credits'>
-                <span> By: Daniel Oliveira </span>
+                <span> {api.credits} </span>
             </div>
         </footer>
     )
