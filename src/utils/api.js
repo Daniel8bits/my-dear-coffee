@@ -65,9 +65,9 @@ const api =
                         "name": "Robusta",
                         "description": "Also known as Conilon, the coffee selected with this type of grain has a much higher concentration of caffeine, that is, it is perfect for people who like a bitter taste. \nThe Coffea canephora plant is widely cultivated in several countries, mainly in Vietnam and Brazil. \nIt develops quite easily in regions with hot and humid climates, and at lower altitudes, up to 600 meters in altitude. It is also more resistant to pest attacks than Arabica coffee, so it becomes practical and easy to plant. \nOne of its most common uses is in instant coffee. When this grain is added to the preparation, we notice that the coffee becomes fuller and with a more bitter taste as well."
                     },
-                ]
+                ],
+                "source": "https://www.graogourmet.com/blog/conheca-os-tipos-de-graos-de-cafe/"
             },
-            "source": "https://www.graogourmet.com/blog/conheca-os-tipos-de-graos-de-cafe/"
         },
         {
             "name": "Benefits",
@@ -116,9 +116,9 @@ const api =
                         "name": "Alcoholism and drugs",
                         "description": "Just as coffee can help in combating depression, it can inhibit alcoholism and drug use. The conclusion was made by Dr. Darcy Ribeiro, who states that chlorogenic acids and quinides formed in the proper coffee roasted may even be more important than caffeine in the beverage and of great help in the prevention and control of depression and its consequences as suicide and alcoholism, a slow form of suicide and its consequences, such as cirrhosis. \nIt is important to understand that many drugs against these diseases rely on drugs with opioid antagonistic properties, such as naltroxone and nalmefene. And coffee naturally has potent opioid antagonists such as the quinides formed in coffee roasted from chlorogenic acids."
                     },
-                ]
+                ],
+                "source": "https://www.graogourmet.com/blog/10-beneficios-do-cafe-para-a-saude/"
             },
-            "source": "https://www.graogourmet.com/blog/10-beneficios-do-cafe-para-a-saude/"
         },
         {
             "name": "Drinks",
@@ -159,12 +159,12 @@ const api =
                         "name": "Coffee with chantilly",
                         "description": "Very common throughout Brazil, comprises in a dose of espresso covered with whipped cream."
                     }
+                ],
+                "source": [
+                    "https://www.mexidodeideias.com.br/barista-e-sommelier/tipos-de-cafe-1-do-longo-ao-ristreto/",
+                    "http://www.mexidodeideias.com.br/barista-e-sommelier/tipos-de-cafe-2-do-pingado-ao-macchiato/"
                 ]
-            },
-            "source": [
-                "https://www.mexidodeideias.com.br/barista-e-sommelier/tipos-de-cafe-1-do-longo-ao-ristreto/",
-                "http://www.mexidodeideias.com.br/barista-e-sommelier/tipos-de-cafe-2-do-pingado-ao-macchiato/"
-            ]
+            }
         }
     ],
     "credits": "By: Daniel Oliveira"

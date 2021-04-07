@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Drinks = () => {
+const Drinks = ({page}) => {
     return (
         <div className='PG-drinks'>
-            Drinks
+            
         </div>
     );
+};
+
+Drinks.propTypes = {
+    page: PropTypes.object.isRequired
 };
 
 export default Drinks;

@@ -46,9 +46,9 @@ const App = () => {
           <ViewManager  
             items={[
               {item: <Home      page={api.pages[0].content}  />, id: api.pages[0].pathname},
-              {item: <Kinds     page={api.pages[0].content}  />, id: api.pages[1].pathname},
-              {item: <Benefits  page={api.pages[0].content}  />, id: api.pages[2].pathname},
-              {item: <Drinks    page={api.pages[0].content}  />, id: api.pages[3].pathname}
+              {item: <Kinds     page={api.pages[1].content}  />, id: api.pages[1].pathname},
+              {item: <Benefits  page={api.pages[2].content}  />, id: api.pages[2].pathname},
+              {item: <Drinks    page={api.pages[3].content}  />, id: api.pages[3].pathname}
             ]}
           />
         </main>

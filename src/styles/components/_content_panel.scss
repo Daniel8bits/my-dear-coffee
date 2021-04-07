@@ -1,0 +1,57 @@
+
+.CP-content-panel {
+
+    > .UI-grid {
+
+        box-shadow: 0 0 5px black;
+        border: .3em solid $reddish-brown;
+        margin: 5em;
+
+        > .UI-grid:nth-child(1) {
+
+            margin: 0 2em 0;
+            border-bottom: .15em solid $reddish-brown;
+            font-family: OleoScriptSwashCaps;
+            color: $dark-reddish-brown;
+
+            h2 {
+                font-size: 2em;
+                margin: 1em 0;
+            }
+
+        }
+
+        section .UI-grid {
+
+            padding: 1em;
+            color: $reddish-brown;
+
+            h3 {
+                font-size: 2em;
+                margin: 1em 0;
+                font-family: OleoScriptSwashCaps;
+            }
+
+            span {
+                font-size: 1.2em;
+                font-family: OleoScript;
+            }
+
+        }
+
+        > .UI-grid:nth-child(3) {
+
+            margin: 0 2em 0;
+            border-top: .15em solid $reddish-brown;
+            font-family: OleoScript;
+            color: $dark-reddish-brown;
+
+            h2 {
+                margin: 1em 0;
+            }
+
+        }
+
+    }
+
+}

@@ -1,11 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Kinds = () => {
+import ContentPanel from '../components/contentpanel/ContentPanel';
+
+const Kinds = ({page}) => {
     return (
         <div className='PG-kinds'>
-            Kinds
+            <ContentPanel
+                title={page.title}
+                content={page.kinds}
+                source={page.source}
+            />
         </div>
     );
 };
+
+Kinds.propTypes = {
+    page: PropTypes.object.isRequired
+}
 
 export default Kinds;
