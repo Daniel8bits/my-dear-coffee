@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 
-import {PagePathnames} from '../../utils/Dictionaries'
+import api from '../../utils/api'
 
 const ViewManager = ({items, className=''}) => {
     return (
@@ -9,7 +9,7 @@ const ViewManager = ({items, className=''}) => {
             <Switch>
                 {items.map((item, key) => {
                     return (
-                        <Route exact={item.id === PagePathnames[0]} key={key} path={item.id}>
+                        <Route exact={item.id === api.pages[0].pathname} key={key} path={item.id}>
                             {item.item}
                         </Route>
                     )
