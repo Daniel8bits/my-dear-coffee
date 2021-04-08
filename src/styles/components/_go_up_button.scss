@@ -1,0 +1,18 @@
+
+.CP-go-up-button {
+    position: fixed !important;
+    right: 2em;
+    bottom: 2em;
+    border-radius: .8em !important;
+    background-color: $dark-brown !important;
+    box-shadow: 0 0 5px black !important;
+
+    img {
+        width: 4em;
+    }
+
+    &:hover {
+        background-color: $reddish-brown !important;
+    }
+
+}

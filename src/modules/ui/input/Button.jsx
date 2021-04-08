@@ -6,7 +6,7 @@ import MaterialButton from '@material-ui/core/Button'
 import MaterialIconButton from '@material-ui/core/IconButton'
 import Fab from '@material-ui/core/Fab'
 
-import GoogleLogin from 'react-google-login'
+//import GoogleLogin from 'react-google-login'
 
 export const IconButton = ({className='', ...props}) => {
     return (
@@ -20,6 +20,7 @@ export const FloatingButton = ({className='', ...props}) => {
     )
 }
 
+/*
 export const GoogleButton = ({onSuccess=null, onFailure=null, children}) => {
 
     const style = useStyle({
@@ -66,6 +67,7 @@ export const GoogleButton = ({onSuccess=null, onFailure=null, children}) => {
         />
     )
 }
+*/
 
 export const Button = forwardRef((
         {className='', size='medium', variant='text',

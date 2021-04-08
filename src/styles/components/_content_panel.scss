@@ -21,20 +21,72 @@
 
         }
 
-        section .UI-grid {
+        section {
 
-            padding: 1em;
-            color: $reddish-brown;
+            table {
+                border-collapse: collapse;
+                border-left: none;
+                border-right: none;
+                margin: 1em;
 
-            h3 {
-                font-size: 2em;
-                margin: 1em 0;
-                font-family: OleoScriptSwashCaps;
+                thead {
+                    font-family: OleoScriptSwashCaps;
+                    color: $dark-reddish-brown;
+                    th {
+                        padding-bottom: 1em;
+                    }
+                }
+
+                tbody {
+                    tr {
+                        border-top: .15em solid $reddish-brown;
+                        border-bottom: .15em solid $reddish-brown;
+
+                        td {
+                            font-family: OleoScript;
+                            padding: 2em;
+                            color: $reddish-brown;
+
+                            h5 {
+                                font-size: 1.4em;
+                            }
+
+                            span {
+                                font-size: 1.2em;
+                            }
+                        }
+
+                        td:nth-child(1) {
+                            border-right: .15em solid $reddish-brown;
+                            font-family: OleoScriptSwashCaps;
+                            width: 30%;
+                            text-align: center;
+                            color: $dark-brown;
+                        }
+
+                        &:nth-child(odd) {
+                            background-color: $light-cream;
+                        }
+                    }
+                }
             }
 
-            span {
-                font-size: 1.2em;
-                font-family: OleoScript;
+            .UI-grid {
+
+                padding: 1em;
+                color: $reddish-brown;
+
+                h3 {
+                    font-size: 2em;
+                    margin: 1em 0;
+                    font-family: OleoScriptSwashCaps;
+                }
+
+                span {
+                    font-size: 1.2em;
+                    font-family: OleoScript;
+                }
+
             }
 
         }
@@ -48,6 +100,7 @@
 
             h2 {
                 margin: 1em 0;
+                text-align: center;
             }
 
         }

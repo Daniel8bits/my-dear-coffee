@@ -129,7 +129,8 @@ const api =
                 "subcaption": "Know about the most popular coffee drinks around the world and how they are drunk. You will surprise yourself."
             },
             "content": {
-                "name": "Types of coffee drinks",
+                "title": "Types of coffee drinks",
+                "thead": ["Drinks", "Description"],
                 "drinks": [
                     {
                         "name": "Espresso",
@@ -149,7 +150,7 @@ const api =
                     },
                     {
                         "name": "Cappuccino",
-                        "description": "The real cappuccino has 1/3 of espresso, 1/3 of steamed milk, 1/3 of milk froth in the 150 to 180 ml cup. The foam of the cappuccino should be dense and creamy, with temperature of maximum 60º to take in goals. In Brazil, there is the habit of adding cinnamon or chocolate."
+                        "description": "The real cappuccino has 1/3 of espresso, 1/3 of steamed milk, 1/3 of milk froth in the 150 to 180 ml cup. The foam of the cappuccino should be dense and creamy, with temperature of maximum 60º C to take in goals. In Brazil, there is the habit of adding cinnamon or chocolate."
                     },
                     {
                         "name": "Macchiato",

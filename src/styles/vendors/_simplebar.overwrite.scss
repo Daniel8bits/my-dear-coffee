@@ -1,0 +1,22 @@
+
+
+.simplebar-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow-y: scroll;*/
+}
+
+.simplebar-scrollbar {
+
+    &:before {
+        border-radius: 0;
+        width: 0.5em;
+        background-color: $reddish-brown;
+        box-shadow: 0 0 5px black;
+    }
+
+    &.simplebar-visible:before {
+        opacity: 1;
+    }
+}

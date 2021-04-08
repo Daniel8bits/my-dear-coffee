@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import Header from './modules/components/header/Header';
 import Footer from './modules/components/footer/Footer'
+import GoUpButton from './modules/components/generals/GoUpButton';
 
 import ViewManager from './modules/layouts/ViewManager'
 import ScrolledViewContainer from './modules/layouts/ScrolledViewContainer'
@@ -23,6 +24,8 @@ import './styles/main.scss'
 
 const App = () => {
 
+  const scrollRef = useRef()
+
   const dispatch = useDispatch()
   const page = useSelector(state => state.pageMenu.page)
 
@@ -40,7 +43,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <ScrolledViewContainer height='100vh'>
+      <ScrolledViewContainer height='100vh' scrollRef={scrollRef}>
         <Header page={page}  />
         <main>
           <ViewManager  
@@ -53,6 +56,7 @@ const App = () => {
           />
         </main>
         <Footer  />
+        <GoUpButton scrollRef={scrollRef}  />
       </ScrolledViewContainer>
     </BrowserRouter>
   );

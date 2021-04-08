@@ -4,7 +4,7 @@ import useStyle from '../hooks/useStyle'
 import Scroll from '../ui/scroll/Scroll'
 import ViewContainer from './ViewContainer'
 
-const ScrolledViewContainer = ({height, className='', children}) => {
+const ScrolledViewContainer = ({height, scrollRef=null, className='', children}) => {
 
     const style = useStyle({
         scrolledViewContainer: {
@@ -20,7 +20,7 @@ const ScrolledViewContainer = ({height, className='', children}) => {
             className={className + ' ' + style.scrolledViewContainer} 
             height={height}
         >
-            <Scroll>
+            <Scroll ref={scrollRef}>
                 {children}
             </Scroll>
         </ViewContainer>
