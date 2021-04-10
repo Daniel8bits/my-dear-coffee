@@ -3,7 +3,7 @@
 
 My Dear Coffee is a sample website made for portfolio purpose. All content about coffee aren't written by me and their sources are available in the articles footers. It was hosted using Firebase Hosting service.
 
-Take a look:  [https://portfolio-ea60d.web.app]
+Take a look:  https://portfolio-ea60d.web.app
 
 ______________________________________________________________________________________________________________________________________
 
