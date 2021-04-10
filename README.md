@@ -1,7 +1,7 @@
 
 # About
 
-My Dear Coffee is a sample website made for portfolio purpose. All the content about coffee is not written by me and its sources are available in the bottom of the articles. It was hosted using Firebase Hosting service. Also, within the code was used an API response simulation called simply "api", there is no backend request.
+My Dear Coffee is a sample website made for portfolio purposes. All the content about coffee is not written by me and its sources are available in the bottom of the articles. It was hosted using Firebase Hosting service. Also, within the code was used an API response simulation called simply "api", there is no backend request.
 
 Take a look:  https://portfolio-ea60d.web.app
 
