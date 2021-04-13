@@ -5,6 +5,17 @@ My Dear Coffee is a sample website made for portfolio purposes. All the content 
 
 Take a look:  https://portfolio-ea60d.web.app
 
+The following technologies were used:
+
+ - HTML5
+ - CSS3
+ - SASS
+ - Javascript ES6+
+ - NodeJS
+ - ReactJS
+ - Redux
+ - Material-UI
+
 ______________________________________________________________________________________________________________________________________
 
 # Getting Started with Create React App
