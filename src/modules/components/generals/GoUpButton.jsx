@@ -8,8 +8,6 @@ const GoUpButton = ({scrollRef}) => {
     const [animating, setAnimating] = useState(false)
 
     const goUp = () => {
-        console.log(scrollRef.current)
-        
         if(!animating) {
             setAnimating(true)
             let deltaTop = scrollRef.current.contentWrapperEl.scrollTop*0.03
